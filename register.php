@@ -10,10 +10,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>login</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="syle.css">
 	<form action="actionlogin.php" method="post">
 </head>
-<body style="background:url(images.jfif)">
+<body style="background:url(sus.jfif)">
 
 
 	<div class="box">

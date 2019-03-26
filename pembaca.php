@@ -23,7 +23,7 @@ if($_SESSION['level']!="pembaca"){
 }
 ?>
 
-<body  style="background:url(h.png)">
+<body  style="background:url(mac.jfif)">
 
   <br>
   <br>
@@ -36,7 +36,7 @@ if($_SESSION['level']!="pembaca"){
   <title>index</title>
 <div align='center'>
   <font color=black>
-  <h1 style="text-align: center; font-family: sans-serif; color: white;"><font color= black>Selamat Datang</font> <?php echo $level;?> <b><?php echo $username;?></b> <a href="logout.php"><b><font color=black>Logout</font></b></a>
+  <h1 style="text-align: center; font-family: sans-serif; color: white;"><font color= black>Selamat Datang</font> <?php echo $level;?> <b><?php echo $username;?></b> <a href="logout.php"><b><font color=red>Logout</font></b></a>
   </font>
 </div></h1> 
 <!-- <?php
@@ -81,6 +81,7 @@ if($_SESSION['level']!="pembaca"){
 
 
 <center>
+   <font color=black>
 <br><br>
     <h2>CAKE PEDIA</h2>
   <br><br>
@@ -104,7 +105,8 @@ if($_SESSION['level']!="pembaca"){
     <td><?= $x["sejarah"];  ?></td>
     <td><?= $x["waktu"];  ?></td>
     <td>
-      <center><button><a href="ubah.php?id=<?= $x["id"]?>">ubah</a></button><br><br><button><a href="hapus.php?id=<?= $x["id"]?>" onclick =" return confirm ('yakin untuk dihapus?');">hapus</a></button></center>
+      <center><button><a href="ubah.php?id=<?= $x["id"]?>">ubah</a></button><br><br><button><a href="hapus.php?id=<?= $x["id"]?>" onclick =" return confirm ('yakin untuk dihapus?');">hapus</a></button> 
+      </center>
     </td>
   </tr>
 <?php $i++; ?>
@@ -114,7 +116,6 @@ if($_SESSION['level']!="pembaca"){
 <br>
 <center>
   <br>
-<a href="creat.php">Tambah artikel>></a>
 <a href="logout.php">Logout>></a>
 </center>
   </body>

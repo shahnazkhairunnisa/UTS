@@ -15,7 +15,7 @@ if(!isset($_SESSION['username'])){
 //cek level user
 if($_SESSION['level']!="admin"){
   header('location:pembaca.php');
-    // die("Anda bukan manager");
+    // die("Anda bukan pembaca");
     //jika bukan admin jangan lanjut
 }else{
   $username = $_SESSION['username']; 
@@ -49,7 +49,7 @@ if($_SESSION['level']!="admin"){
 
 
 <center>
-<br><br>
+<br>
     <h2>CAKE PEDIA</h2>
   <br><br>
     <table border="5" cellpadding="20" cellspacing="10" width="80%" >
@@ -84,6 +84,7 @@ if($_SESSION['level']!="admin"){
   <br>
 <a href="creat.php">Tambah artikel>></a>
 <a href="logout.php">Logout>></a>
+<br><br>
 </center>
   </body>
 </html>

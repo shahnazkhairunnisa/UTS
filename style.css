@@ -1,110 +1,90 @@
-body{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	    background: url("images.jfif");
-	background-size: cover;
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background: url(sus.jfif);
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+font-family: 'Numans', sans-serif;
 }
 
-.box{
-		background: transparent;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 400px;
-	padding: 100px;
-  background: url("images.jfif");
-
-	box-shadow: 4 15px 25px rgba(0,0,0,.5);
-	border-radius: 10px;
+.container{
+height: 100%;
+width:100%;
+align-content: center;
 }
 
-.box h2{
-	margin: 5;
-	padding: 0;
-	color: black;
-	outline: black;
-	background: white;
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
 
-	padding: 10px 20px;
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
 
-	border-radius: 10px;
-	text-align: center;
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
 
 }
 
-.box .inputBox{
-	position: relative;
+.remember{
+color: white;
 }
 
-.box .inputBox input{
-	background: white;
-	padding: 10px 20px;
-
-	border-radius: 10px;
-	width: 100%;
-	padding: 10px 0;
-	font-size: 20px;
-	color: white;
-	letter-spacing: 1px;
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid #fff;
-	outline: white;
-	background: black;
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
 }
 
-.box .inputBox label{
-	position: absolute;
-	top: 0;
-	left: 0;
-	letter-spacing: 1px;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #fff;
-	pointer-events: none;
-	transition: .5s;
-}
-.box .inputBox input:focus ~ label,
-.box .inputBox input:valid ~ label{
-	top: -20px;
-	left: 0;
-	color: #03a9f4;
-	font-size: 12px;
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
 }
 
-.box input[type="submit"]{
-	background: transparent;
-	border:none;
-	outline: none;
-	color: black;
-	background: white;
-	padding: 10px 20px;
-	cursor:pointer;
-	border-radius: 10px;
+.login_btn:hover{
+color: black;
+background-color: white;
 }
 
-.box button{
-	background: transparent;
-	border:none;
-	outline: none;
-	color: black;
-	background: white;
-	padding: 10px 20px;
-	cursor:pointer;
-	border-radius: 10px;
+.links{
+color: white;
 }
 
-a:link{
-	color: currentColor;
-	text-decoration: none;
-}
-a:hover{
-	color: currentColor;
-	text-decoration: none;
-}
-a:visited{
-	color: currentColor;
-	text-decoration: none;
+.links a{
+margin-left: 4px;
 }

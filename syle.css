@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	    background: url("c.gif");
+	    background: url("sus.gif");
 	background-size: cover;
 }
 
@@ -14,8 +14,7 @@ body{
 	transform: translate(-50%,-50%);
 	width: 400px;
 	padding: 100px;
-  background: url("c.gif");
-
+  
 	box-shadow: 4 15px 25px rgba(0,0,0,.5);
 	border-radius: 10px;
 }
@@ -23,15 +22,15 @@ body{
 .box h2{
 	margin: 5;
 	padding: 0;
-	color: black;
+	color: blue;
 	outline: black;
-	background: white;
+	
 
-	padding: 10px 20px;
+	padding: 8px 12px;
 
 	border-radius: 10px;
 	text-align: center;
-
+        background: white;
 }
 
 .box .inputBox{
@@ -78,8 +77,8 @@ body{
 	background: transparent;
 	border:none;
 	outline: none;
-	color: black;
-	background: white;
+	color: white;
+	background: blue;
 	padding: 10px 20px;
 	cursor:pointer;
 	border-radius: 10px;
@@ -89,8 +88,8 @@ body{
 	background: transparent;
 	border:none;
 	outline: none;
-	color: black;
-	background: white;
+	color: white;
+	background: blue;
 	padding: 10px 20px;
 	cursor:pointer;
 	border-radius: 10px;

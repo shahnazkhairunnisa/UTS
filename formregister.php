@@ -8,12 +8,12 @@
 <html>
 <head>
 <style>
-.error {color: white;}
+.error {color: black;}
 </style>
 <form action="actionregister.php" method="post">
   
 </head>
-<body  style="background:url(nady.jpg)">
+<body  style="background:url(mac.jfif)">
 <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = $usiaErr  = $biografiErr =  "";
@@ -95,30 +95,30 @@ function test_input($data) {
 }
 ?>
 <div style="padding-left: 500px">
-<h3><font color=black>-----------------------<u>FORM DATA</u>------------------------ </font></h3>
+<h3><font color=red>-----------------------<u>FORM DATA</u>------------------------ </font></h3>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
 
 <table width="50%" align="left" cellspacing="1" cellpadding="5">
   <tr>
-   <td><font color=black>username</td>
+   <td><font color=blue>username</td>
    <td>:<input type="text" name="username" value="<?php echo $username;?>">
   <span class="error">* <?php echo $nameErr;?></span></td>
   </tr>
   <tr>
-   <td><font color=black>password</td>
+   <td><font color=blue>password</td>
    <td>:<input type="password" name="password">
    <span class="error">* <?php echo $passErr;?> </span>
   </tr>
   
   <tr>
-   <td><font color=black>E-mail</td>
+   <td><font color=blue>E-mail</td>
    <td>:<input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span></td>
   </tr>
   
   <tr>
-   <td><font color=white>Gender</td>
+   <td><font color=blue>Gender</td>
    <td>:
   <input type="radio" name="gender" value="Laki - Laki">male
   <input type="radio" name="gender" value="Perempuan">female
@@ -126,18 +126,18 @@ function test_input($data) {
    </td>
   </tr>
   <tr>
-   <td><font color=white>Usia</td>
+   <td><font color=blue>Usia</td>
    <td>:<input type="text" name="usia" value="<?php echo $usia;?>">
   <span class="error">* <?php echo $usiaErr;?></span>
    </td>
   </tr>
   <tr>
-   <td><font color=white>website</td>
+   <td><font color=blue>website</td>
    <td>:<input type="text" name="website" value="<?php echo $website;?>">
   <span class="error">* <?php echo $websiteErr;?></span></td>
   </tr>
   <tr>
-   <td><font color=white>level</td>
+   <td><font color=blue>level</td>
    <td>:<form action="/action_page.php">
   <select name="level">
     <option value="">-Pilih level anda-</option>
@@ -147,7 +147,7 @@ function test_input($data) {
   
   </tr>
   <tr>
-   <td><font color=white>Biografi</td>
+   <td><font color=blue>Biografi</td>
    <td>:<textarea name="biografi"><?php echo $biografi;?></textarea><span class="error">* <?php echo $biografiErr;?></span></td>
   </tr>
   <tr><td><img src="capcay.php"/> </td><td>: <input type="text" placeholder="masukan kode captcha" name="kode"/><span class="error">*</span></td>
